@@ -1,0 +1,124 @@
+/* Contact.css */
+
+/* General styles for the 'contact' container */
+.contact {
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+   // background-color: #f9f9f9;
+    //color: #333;
+}
+
+.contact-title {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.contact-title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: pink; /* Fallback for browsers that do not support background-clip */
+}
+
+.contact-title img {
+    width: 100px;
+    opacity: 0.3;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color:#fff;
+
+}
+
+.contact-left {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-left h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: pink;
+}
+
+.contact-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    Color:#555;
+}
+
+.contactdetailme {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactdetailme img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+}
+
+.contactdetailme p {
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+}
+
+.contact-right {
+    flex: 1;
+    max-width: 500px;
+}
+
+.contact-right label {
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-right textarea {
+    resize: vertical;
+}
+
+.contact-submit {
+    background-color: #ff4c4c; /* Red color */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-submit:hover {
+    background-color: #e03d3d; /* Darker red */
+    transform: scale(1.05);
+}

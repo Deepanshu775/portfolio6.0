@@ -1,0 +1,95 @@
+/* Services.css */
+
+/* General styles for the 'services' container */
+.services {
+    font-family: 'Arial', sans-serif;
+    padding: 40px;
+    //background-color: #f9f9f9;
+    //color: #333;
+}
+
+.services-title {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.services-title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color:pink;
+}
+.services-title img {
+    width: 100px;
+    opacity: 0.3;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.services-format {
+    background-color: black; /* Starting color: Red */
+    border: 2px solid #333; /* Dark border initially */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.services-format h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.services-format h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.services-format p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.services-format:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, red, yellow); /* Hover color: Green gradient */
+    border-color: #004e92; /* Change border color on hover */
+}
+
+.services-readmore {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.services-readmore p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.services-readmore img {
+    width: 15px;
+    transition: transform 0.3s ease;
+}
+
+.services-readmore:hover p {
+    color: #004e92;
+}
+
+.services-readmore:hover img {
+    transform: translateX(5px);
+}

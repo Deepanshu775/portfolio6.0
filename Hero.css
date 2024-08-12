@@ -1,0 +1,113 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    border-radius: 50%; /* Make the image round */
+    width: 280px; /* Adjust the size as needed */
+    height: 280px; /* Ensure the image remains circular */
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: white;
+    max-width: 600px;
+}
+
+.hero-action {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    gap: 20px;
+}
+
+.hero-connect, .hero-resume {
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease; /* Smooth transition */
+    text-align: center;
+}
+
+.hero-connect {
+    background: linear-gradient(267deg, pink 0.36%, red 102.67%);
+}
+
+.hero-resume {
+    background: linear-gradient(267deg, pink 0.36%, red 102.67%);
+    color: #fff;
+}
+
+.hero-connect:hover {
+    transform: scale(1.05);
+    background: linear-gradient(267deg, red 0.36%, #DA7C25 102.67%); /* Color flip on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-resume:hover {
+    transform: scale(1.05);
+    background: linear-gradient(267deg, #218838 0.36%, pink 102.67%); /* Color flip on hover */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero span {
+    background: linear-gradient(267deg, red 0.36%, #DA7C25 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero img {
+        width: 200px; /* Adjust the size for smaller screens */
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        max-width: 90%; /* Ensure text doesn't overflow */
+    }
+
+    .hero-action {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Reduced gap for smaller screens */
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 12px 25px; /* Adjust padding for smaller screens */
+        font-size: 18px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-connect, .hero-resume {
+        padding: 10px 20px; /* Further adjust padding */
+        font-size: 16px; /* Further adjust font size */
+    }
+}
